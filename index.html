@@ -1,322 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Riski Febrianto - Backend Developer</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Custom Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <title>My Portofolio | Riski Febrianto</title>
-  </head>
-  <body id="home">
-    <!-- Start Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">Riski Febrianto</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+<body class="d-flex flex-column h-100">
+  <main class="flex-shrink-0">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light py-3 position-fixed w-100" style="
+          top: 0;
+          z-index: 9999;
+          background-color: rgba(255, 255, 255, 0.7);
+          backdrop-filter: blur(10px);
+        ">
+      <div class="container px-5">
+        <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">KIFEB</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
-                >Home</a
-              >
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="resume.html">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Project</a>
+              <a class="nav-link" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End Navbar -->
 
-    <!-- Awal Jumbotrone -->
-    <section class="jumbotron text-center">
-      <img
-        src="aset/fotoBukuNikah.jpg"
-        alt="Riski Febrianto"
-        width="150px"
-        class="rounded-circle img-thumbnail"
-      />
-      <h1 class="display-4">Riski Febrianto</h1>
-      <p class="lead">Calon Orang Sukses | Jannah In Syaa Allah</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,32L40,37.3C80,43,160,53,240,74.7C320,96,400,128,480,128C560,128,640,96,720,90.7C800,85,880,107,960,117.3C1040,128,1120,128,1200,117.3C1280,107,1360,85,1400,74.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Jumbotrone -->
-
-    <!-- Awal About -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About Me</h2>
+    <!-- Header-->
+    <header class="py-5">
+      <div class="container px-5 pb-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-xxl-5">
+            <!-- Header text content-->
+            <div class="text-center text-xxl-start">
+              <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                <div class="">
+                  Web Development &middot; Mobile App Development
+                </div>
+              </div>
+              <div class="fs-3 fw-light text-muted">
+                I can help your business to
+              </div>
+              <h1 class="display-3 fw-bolder mb-5">
+                <span class="text-gradient d-inline">Get online and grow fast</span>
+              </h1>
+              <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
+                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-justify">
-          <div class="col-md-4">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-              iure odio temporibus. Ex molestias corrupti velit rerum, sint unde
-              eum veniam minus, voluptas dolor quaerat facilis quae cum, nisi
-              accusamus!
-            </p>
-          </div>
-          <div class="col-md-4">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              voluptate nihil recusandae! Minus, quam, ipsum quia soluta ut
-              laudantium aliquid possimus quas, cum accusantium corrupti quaerat
-              tempore quis dolore. Quaerat.lorem
-            </p>
+          <div class="col-xxl-7">
+            <!-- Header profile picture-->
+            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+              <div class="profile bg-gradient-primary-to-secondary">
+                <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
+                <!-- Watch a tutorial on how to do this on YouTube (link)-->
+                <img class="profile-img" src="assets/profile3.png" alt="..." />
+                <div class="dots-1">
+                  <!-- SVG Dots-->
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                    xml:space="preserve">
+                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                      <path
+                        d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                      </path>
+                      <path
+                        d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                      </path>
+                      <path
+                        d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                      </path>
+                      <path
+                        d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                      </path>
+                      <path
+                        d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                      </path>
+                      <path
+                        d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                      </path>
+                      <path
+                        d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                      </path>
+                      <path
+                        d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                      </path>
+                      <path
+                        d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                      </path>
+                      <path
+                        d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                      </path>
+                      <path
+                        d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                      </path>
+                      <path
+                        d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                      </path>
+                      <path
+                        d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                      </path>
+                      <path
+                        d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                      </path>
+                      <path
+                        d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                      </path>
+                      <path
+                        d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                      </path>
+                      <path
+                        d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                      </path>
+                      <path
+                        d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                      </path>
+                      <path
+                        d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                      </path>
+                      <path
+                        d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                      </path>
+                    </g>
+                  </svg>
+                  <!-- END of SVG dots-->
+                </div>
+                <div class="dots-2">
+                  <!-- SVG Dots-->
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                    xml:space="preserve">
+                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                      <path
+                        d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                      </path>
+                      <path
+                        d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                      </path>
+                      <path
+                        d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                      </path>
+                      <path
+                        d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                      </path>
+                      <path
+                        d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                      </path>
+                      <path
+                        d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                      </path>
+                      <path
+                        d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                      </path>
+                      <path
+                        d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                      </path>
+                      <path
+                        d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                      </path>
+                      <path
+                        d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                      </path>
+                      <path
+                        d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                      </path>
+                      <path
+                        d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                      </path>
+                      <path
+                        d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                      </path>
+                      <path
+                        d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                      </path>
+                      <path
+                        d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                      </path>
+                      <path
+                        d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                      </path>
+                      <path
+                        d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                      </path>
+                      <path
+                        d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                      </path>
+                      <path
+                        d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                      </path>
+                      <path
+                        d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                      </path>
+                    </g>
+                  </svg>
+                  <!-- END of SVG dots-->
+                </div>
+                <div class="dots-3">
+                  <!-- SVG Dots-->
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                    xml:space="preserve">
+                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                      <path
+                        d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                      </path>
+                      <path
+                        d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                      </path>
+                      <path
+                        d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                      </path>
+                      <path
+                        d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                      </path>
+                      <path
+                        d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                      </path>
+                      <path
+                        d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                      </path>
+                      <path
+                        d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                      </path>
+                      <path
+                        d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                      </path>
+                      <path
+                        d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                      </path>
+                      <path
+                        d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                      </path>
+                      <path
+                        d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                      </path>
+                      <path
+                        d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                      </path>
+                      <path
+                        d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                      </path>
+                      <path
+                        d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                      </path>
+                      <path
+                        d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                      </path>
+                      <path
+                        d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                      </path>
+                      <path
+                        d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                      </path>
+                      <path
+                        d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                      </path>
+                      <path
+                        d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                      </path>
+                      <path
+                        d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                      </path>
+                    </g>
+                  </svg>
+                  <!-- END of SVG dots-->
+                </div>
+                <div class="dots-4">
+                  <!-- SVG Dots-->
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                    xml:space="preserve">
+                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                      <path
+                        d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                      </path>
+                      <path
+                        d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                      </path>
+                      <path
+                        d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                      </path>
+                      <path
+                        d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                      </path>
+                      <path
+                        d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                      </path>
+                      <path
+                        d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                      </path>
+                      <path
+                        d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                      </path>
+                      <path
+                        d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                      </path>
+                      <path
+                        d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                      </path>
+                      <path
+                        d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                      </path>
+                      <path
+                        d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                      </path>
+                      <path
+                        d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                      </path>
+                      <path
+                        d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                      </path>
+                      <path
+                        d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                      </path>
+                      <path
+                        d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                      </path>
+                      <path
+                        d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                      </path>
+                      <path
+                        d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                      </path>
+                      <path
+                        d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                      </path>
+                      <path
+                        d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                      </path>
+                      <path
+                        d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                      </path>
+                    </g>
+                  </svg>
+                  <!-- END of SVG dots-->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,96L48,96C96,96,192,96,288,122.7C384,149,480,203,576,208C672,213,768,171,864,154.7C960,139,1056,149,1152,160C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir About -->
-
-    <!-- Awal Project -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>My Project</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="aset/1.png" class="card-img-top" alt="Quote 1" />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="aset/2.png" class="card-img-top" alt="Quote 1" />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="aset/4.png" class="card-img-top" alt="Quote 1" />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="aset/5.png" class="card-img-top" alt="Quote 1" />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="aset/3.png" class="card-img-top" alt="Quote 1" />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+    </header>
+    <!-- About Section-->
+    <section class="bg-light py-5">
+      <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-xxl-8">
+            <div class="text-center my-5">
+              <h2 class="display-5 fw-bolder">
+                <span class="text-gradient d-inline">About Me</span>
+              </h2>
+              <p class="lead fw-light mb-4">
+                Hi! My name is <b>Riski Febrianto</b> and I help brands grow.
+              </p>
+              <p class="text-muted">
+                Software Engineer with a strong focus on turning business requirements into secure, scalable, and
+                maintainable technical
+                solutions. Experienced in translating product ideas into reliable backend flows that improve system
+                stability, support longterm growth, and reduce development complexity. Strong attention to security,
+                clean architecture, and sustainable
+                engineering practices to help businesses deliver robust digital products with lower risk.
+              </p>
+              <div class="d-flex justify-content-center fs-2 gap-4">
+                <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
+                <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
+                <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#f3f4f5"
-          fill-opacity="1"
-          d="M0,32L48,58.7C96,85,192,139,288,170.7C384,203,480,213,576,213.3C672,213,768,203,864,208C960,213,1056,235,1152,208C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir Project -->
-
-    <!-- Awal Contact -->
-    <section id="contact" class="pb-4">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col mb-3">
-            <h2>Contact Me</h2>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <div
-                class="
-                  alert alert-success alert-dismissible
-                  fade
-                  show
-                  d-none
-                  my-alert
-                "
-                role="alert"
-              >
-                <strong>Terimakasih!</strong> Pesan anda sudah kami terima
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <form name="My-Contact-Form">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nama Lengkap</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    aria-describedby="name"
-                    name="nama"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    aria-describedby="email"
-                    name="email"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="pesan" class="form-label">Pesan</label>
-                  <textarea
-                    class="form-control"
-                    id="pesan"
-                    rows="3"
-                    name="pesan"
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-success btn-kirim">
-                  Kirim
-                </button>
-
-                <button
-                  class="btn btn-primary btn-loading d-none"
-                  type="button"
-                  disabled
-                >
-                  <span
-                    class="spinner-grow spinner-grow-sm"
-                    role="status"
-                    aria-hidden="true"
-                  ></span>
-                  Loading...
-                </button>
-              </form>
-            </div>
-          </div>
+  </main>
+  <!-- Footer-->
+  <footer class="bg-white py-4 mt-auto">
+    <div class="container px-5">
+      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="col-auto">
+          <div class="small m-0">Copyright &copy; Your Website 2023</div>
+        </div>
+        <div class="col-auto">
+          <a class="small" href="#!">Privacy</a>
+          <span class="mx-1">&middot;</span>
+          <a class="small" href="#!">Terms</a>
+          <span class="mx-1">&middot;</span>
+          <a class="small" href="#!">Contact</a>
         </div>
       </div>
-    </section>
-    <!-- Akhir Contact -->
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+</body>
 
-    <!-- Awal Footer -->
-    <footer class="bg-primary text-center text-light p-2">
-      <p class="mt-2">
-        Created with <i class="bi bi-heart-fill text-danger"></i> by
-        <a href="http://instagram.com" class="text-white fw-bold">Kifeb</a>
-      </p>
-    </footer>
-    <!-- Akhir Footer -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Google Sheets -->
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwqPiWfik6rTMOzX4UQUcEVnjUhZ5Ry1prVh6lhS-8b3wGq9wpLSmSS16LIbAhV93uQ/exec";
-      const form = document.forms["My-Contact-Form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const alert = document.querySelector(".my-alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // Ketika tombol submit diklik
-        // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            alert.classList.toggle('d-none')
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            form.reset()
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-  </body>
 </html>
