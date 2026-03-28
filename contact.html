@@ -172,11 +172,12 @@
 
     <!-- Google Sheets -->
     <script>
-        const scriptURL = "https://script.google.com/macros/s/AKfycbxGFZJk8Xs7HrdmFMsShId6_TCpj6XtOT1A9YjFcdHl7XyvW5E_ZW4Gwm5SOk25P8ue/exec";
+        const scriptURL = "https://script.google.com/macros/s/AKfycbyqOys6O5mGL_TTGHVmUr2xy-cRaL03Tr0Cc9S_eaqb8Fzy7djAyVT2j4lqr6-d_eiv/exec";
         const form = document.forms["contactForm"];
         const btnKirim = document.querySelector(".btn-kirim");
         const btnLoading = document.querySelector(".btn-loading");
-        const alert = document.querySelector(".my-alert");
+        const submitSuccessMessage = document.getElementById("submitSuccessMessage");
+        const submitErrorMessage = document.getElementById("submitErrorMessage");
 
         form.addEventListener("submit", (e) => {
             e.preventDefault();
@@ -184,15 +185,33 @@
             // tampilkan tombol loading, hilangkan tombol kirim
             btnLoading.classList.toggle("d-none");
             btnKirim.classList.toggle("d-none");
+            // Sembunyikan pesan sebelumnya
+            submitSuccessMessage.classList.add("d-none");
+            submitErrorMessage.classList.add("d-none");
+
             fetch(scriptURL, { method: "POST", body: new FormData(form) })
                 .then((response) => {
-                    alert.classList.toggle('d-none')
+                    // Cek HTTP status code
+                    if (!response.ok) {
+                        throw new Error(`HTTP Error: ${response.status} ${response.statusText}`);
+                    }
+                    return response;
+                })
+                .then((response) => {
+                    // Jika berhasil
+                    submitSuccessMessage.classList.remove("d-none");
                     btnLoading.classList.toggle("d-none");
                     btnKirim.classList.toggle("d-none");
-                    form.reset()
+                    form.reset();
                     console.log("Success!", response);
                 })
-                .catch((error) => console.error("Error!", error.message));
+                .catch((error) => {
+                    // Jika terjadi error
+                    console.error("Error!", error.message);
+                    submitErrorMessage.classList.remove("d-none");
+                    btnLoading.classList.toggle("d-none");
+                    btnKirim.classList.toggle("d-none");
+                });
         });
     </script>
 </body>
